@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selamat Ulang Tahun, Irma Nurhaliza</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎂 Selamat Ulang Tahun, Irma Nurhaliza🎂 </h1>
+    <p>Hari ini kita merayakan sosok paling indah dalam hidupku. Senyummu menerangi duniaku, dan hatimu membuat segalanya lebih baik.</p>
+
+    <!-- Galeri Gambar -->
+    <div class="gallery">
+      <img src="assets/img1.jpg" alt="Foto 1" class="animated-img" onclick="openModal(this.src)" />
+      <img src="assets/img2.jpg" alt="Foto 2" class="animated-img" onclick="openModal(this.src)" />
+      <img src="assets/img3.jpg" alt="Foto 3" class="animated-img" onclick="openModal(this.src)" />
+      <img src="assets/img4.jpg" alt="Foto 4" class="animated-img" onclick="openModal(this.src)" />
+      <img src="assets/img5.jpg" alt="Foto 5" class="animated-img" onclick="openModal(this.src)" />
+      <img src="assets/img6.jpg" alt="Foto 6" class="animated-img" onclick="openModal(this.src)" />
+    </div>
+
+    <blockquote>"Kamu adalah hari ini dan semua hariku esok."</blockquote>
+
+    <!-- Tombol Redirect ke YouTube -->
+    <a href="https://youtu.be/JENpTmMQBQY?si=ZS6rH1JX8hLjicBq" target="_blank" class="youtube-btn">
+      💖 Putar Lagu Spesial
+    </a>
+  </div>
+
+  <!-- Modal Viewer -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <img id="modal-img" class="modal-content" />
+  </div>
+
+  <script>
+    function openModal(src) {
+      document.getElementById("modal-img").src = src;
+      document.getElementById("modal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+</body>
+</html>
